@@ -2772,8 +2772,9 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #f06161;
-  border-color: #f06161;
+  background-color: #9c090a;
+  /* #f06161; */
+  border-color: #9c090a;
 }
 
 .btn-primary:hover {
@@ -5158,6 +5159,7 @@ input[type="button"].btn-block {
 
 .card-img-top {
   width: 100%;
+  height: 15vw;
   border-top-left-radius: calc(0 - 1px);
   border-top-right-radius: calc(0 - 1px);
 }
@@ -11355,7 +11357,7 @@ p {
 }
 
 .navbar-brand .brand-img {
-  width: 45px;
+  width: 65px;
   margin: -0.3125rem 0;
 }
 
@@ -11554,7 +11556,7 @@ pre .code {
   position: relative;
   height: 100vh;
   min-height: 600px;
-  background-image: url(../imgs/header.jpg);
+  background-image: url(../imgs/PHOTO-2022-05-01-21-39-40.jpg);
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -11574,7 +11576,8 @@ pre .code {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #2C3E50;
+  background: #656364;
+  /* #2C3E50; */
   opacity: .9;
 }
 

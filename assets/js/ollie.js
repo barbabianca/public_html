@@ -81,4 +81,6 @@ readMoreLink.on('click', function(event) {
   readMoreLink.hide();
 });
 
+// select the read-more link and hidden paragraph
+
 

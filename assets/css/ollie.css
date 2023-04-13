@@ -11556,7 +11556,7 @@ pre .code {
   position: relative;
   height: 100vh;
   min-height: 600px;
-  background-image: url(../imgs/PHOTO-2022-05-01-21-39-40.jpg);
+  background-image: url(../imgs/PHOTO-2022-05-01-21-39-40-2.jpg);
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -11689,7 +11689,8 @@ pre .code {
 }
 
 .section:nth-child(odd) {
-  background-color: #f1fafb;
+  background-color: #d6d6d6;
+  /* #f1fafb; */
 }
 
 .section.p-sm {

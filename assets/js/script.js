@@ -64,3 +64,5 @@ readMoreLink.on('click', function(event) {
   // hide the read-more link by setting its display property to "none"
   readMoreLink.hide();
 });
+
+

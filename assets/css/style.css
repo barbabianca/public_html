@@ -1,17 +1,5 @@
 @charset "UTF-8";
-/*!
-=========================================================
-* Ollie Landing page
-=========================================================
 
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,400,400i,700,700i,900,900i");
 :root {
   --blue: #007bff;
@@ -11709,13 +11697,14 @@ pre .code {
   background: #2C3E50;
   color: #fff;
 }
-.fixed-top {
+
+/* .fixed-top {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 100;
+  right: 200;
   left: 0;
   z-index: 1030;
-}
+} */
 
 #topBtn {
   display: none;
@@ -11726,13 +11715,18 @@ pre .code {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #005486;
-  color: black;
+  background-color: #79797a;
+  color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 15px 5px 15px 15px; /* Adjust padding to make room for icon */
   border-radius: 4px;
 }
 
 #topBtn:hover {
   background-color: #555;
 }
+
+#topBtn i {
+  margin-right: 10px;
+}
+

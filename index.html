@@ -9,20 +9,22 @@
 
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-5OMnXfQIUBxBzN1CQbGdWjKvJbP5oUPtN/VE1GZJtKjgjOnsKhJjrn8+Yw12gm6cnOxPuBlKfJ2T8+G9/vvLjw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     
     <!-- owl carousel -->
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.css">
 
     <!-- Bootstrap + Ollie main styles -->
-	<link rel="stylesheet" href="assets/css/ollie.css">
+	<link rel="stylesheet" href="assets/css/style.css">        
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/imgs/Hidrok_logoHD.png" alt="" class="brand-img"></a>
+            <a class="navbar-brand" href="#"><img src="assets/imgs/Hidrok-logo (500 × 200 px).svg" alt="" class="brand-img"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,11 +37,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Hakkımızda</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Referanslar</a>
+                        <a class="nav-link" href="#service">Hizmetler</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Ürünler</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testmonial">Kariyer</a>
+                        <a class="nav-link" href="#testmonial">Referanslar</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#blog">Blog</a>
@@ -65,19 +72,19 @@
                     <div class="carousel-item active">
                         <div class="carousel-caption d-none d-md-block">
                             <h1 class="carousel-title">Hidrolik Ünite<br> Tasarım ve İmalatı</h1>
-                            <button class="btn btn-primary btn-rounded">Bize Yazın</button>
-                        </div>
+                            <button class="btn btn-primary btn-rounded"><a href="#contact">Bize Yazın</a></button>
+                                                        </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption d-none d-md-block">
                             <h1 class="carousel-title">Manifold Blok <br> Tasarım ve İmalatı</h1>
-                            <button class="btn btn-primary btn-rounded">Bize Yazın</button>
+                            <button class="btn btn-primary btn-rounded"><a href="#contact">Bize Yazın</a></button>
                           </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption d-none d-md-block">
                             <h1 class="carousel-title">Hidrolik Komponent <br> Satışı</h1>
-                            <button class="btn btn-primary btn-rounded">Bize Yazın</button>
+                            <button class="btn btn-primary btn-rounded"><a href="#contact">Bize Yazın</a></button>
                           </div>
                     </div>
                 </div>
@@ -173,7 +180,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="service">
         <div class="container">
             <!-- <h6 class="xs-font mb-0">Blanditiis unde illum earum</h6> -->
             <h3 class="section-title mb-4">Hizmetler</h3>
@@ -427,9 +434,12 @@
                         </div>
                     </div>
                 </div> 
+                <button id="topBtn" onclick="topFunction()" title="Go to top"><i class="ti-arrow-up"></i></button>
+                <!-- class="btn btn-primary fixed-top" -->
             </footer>
         </div>
     </section>
+    
 	
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
@@ -444,6 +454,24 @@
 
     <!-- Ollie js -->
     <script src="assets/script.js"></script>
-
+    <script>
+        // Get the button
+        var myButton = document.getElementById("topBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            myButton.style.display = "block";
+          } else {
+            myButton.style.display = "none";
+          }
+        };
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        </script>
 </body>
 </html>

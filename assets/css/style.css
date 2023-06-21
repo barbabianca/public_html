@@ -11730,3 +11730,8 @@ pre .code {
   margin-right: 10px;
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 10px;
+}
